@@ -1,0 +1,13 @@
+
+body {
+  background-color: white;
+  
+/* background-image: url("flo.jpg");
+ background-color: #cccccc;*/
+}
+
+div {
+  height: 200px;
+  width: 50%;
+  background-color: powderblue;
+}
