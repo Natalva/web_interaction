@@ -22,8 +22,8 @@ html {
 }
 
 .header {
-  background-color: #d5ffcf;
-  color: #000000;
+/*  background-color: #d5ffcf;
+*/  color: #000000;
   padding: 15px;
 }
 
@@ -47,8 +47,8 @@ html {
 }
 
 .aside {
-  background-color: #d5ffcf;
-  padding: 15px;
+/*  background-color: #d5ffcf;
+*/  padding: 15px;
   color: #000000;
   text-align: center;
   font-size: 14px;
