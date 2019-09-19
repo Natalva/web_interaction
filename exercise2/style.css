@@ -11,3 +11,7 @@ div {
   width: 50%;
   background-color: powderblue;
 }
+
+p {
+  font-family: "Times New Roman", Times, serif;
+}
