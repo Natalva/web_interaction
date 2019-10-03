@@ -15,22 +15,23 @@
           margin:10px;
           border-radius:10px;
         }  
-       /* #clock{
-          text-align:center;
-          font-family:helvetica;
-        }  */
+        
 
       </style> 
 
     </head>
 
-<body>
-<!--       <p id="clock">cccc</p>
- --> 
- <p id="text "> Natalie Alvarenga</p>
+<body> 
 
 
-      <div id= "tool">
+<h1 id="id1">Natalie Alvarenga</h1>
+
+
+<button type="button" 
+onclick="document.getElementById('id1').style.color = 'red'">
+Click Me!</button>
+
+
         <select id="myFonts" onChange="fontFunction()">
 
              <option value="Helvetica"> Helvetica</option>
@@ -41,6 +42,10 @@
 
         <br>
         <br>
+        
+        
+        
+        
 
         <input type="checkbox" id="boldCheck" onclick="boldFunction()"> Bold <br>
         <input type="checkbox" id="italicCheck" onclick="italicFunction()"> Italic <br>
@@ -58,5 +63,14 @@
 </body>
 
        <script src="js/scripts.js"></script>   
+       
+       <p id="demo"></p>
+
+<script>
+function fontFunction() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("demo").innerHTML = "You selected: " + x;
+}
+</script>
 </html>
 
