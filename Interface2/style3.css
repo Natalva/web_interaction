@@ -4,25 +4,113 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  padding: 0;
+}
 
+.container {
+    text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.image {
+  display: block;
+  /*width: 100%;
+  height: auto;*/
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: red;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-user:hover {
+  color: #eee;
 }
 
 
+
+
+///////
+
+
 .container {
-  height: 90vh;
-  margin: 2rem;
+  /*height: 90vh;*/
+  width: 100%;
+  /*margin: 2rem;*/
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 
 }
-.cell a:hover {
+
+
+.cell-1 a:hover {
   color: yellow;
     text-decoration: none;
 
-}
+    
 
+}
+.cell.cell-1:hover {
+
+  opacity: 50%;
+}
+.cell.cell-2:hover {
+
+  opacity: 50%;
+}
+.cell.cell-3:hover {
+
+  opacity: 50%;
+}
+.cell.cell-4:hover {
+
+  opacity: 50%;
+}
+.cell.cell-5:hover {
+
+  opacity: 50%;
+}
+.cell.cell-6:hover {
+
+  opacity: 50%;
+}
+.cell.cell-7:hover {
+
+  opacity: 50%;
+}
+.cell.cell-8:hover {
+
+  opacity: 50%;
+}
+.cell.cell-9:hover {
+
+  opacity: 50%;
+}
 .cell a {
   color: pink;
   font-size: 3rem;
@@ -35,7 +123,13 @@ body {
 }
 .cell-1 {
   background: maroon;
+  height: 33.4vh;
 }
+.cell-1:hover{
+
+opacity: 50%;
+}
+
 .cell-2 {
   background: orangered;
 }
@@ -61,6 +155,16 @@ body {
   background: green;
 }
 
+.cell-10 {
+  background: mediumslateblue;
+}
+.cell-11 {
+  background: aquamarine;
+}
+.cell-12 {
+  background: orchid;
+}
+
 
 
 #wrapper
@@ -73,7 +177,7 @@ body {
 
 
 #example1 {
-   
+
   padding: 10px;
 /*  box-shadow: 5px 10px 18px 10px crimson;
 */
@@ -86,7 +190,7 @@ body {
 */}
 
 #example2 {
-  
+
   padding: 10px;
 /*  box-shadow: 5px 10px 18px 10px crimson;
 */
@@ -100,7 +204,7 @@ body {
 
 
 #example3 {
-   
+
   padding: 10px;
   box-shadow: 5px 5px orange, 10px 10px yellow, 15px 15px red;
    background-color: lemonchiffon  ;
@@ -121,7 +225,7 @@ body {
 }
 
 #example5 {
- 
+
   padding: 10px;
   box-shadow: 5px 5px springgreen, 10px 10px turquoise, 15px 15px lightcyan;
    background-color: paleturquoise    ;
@@ -132,20 +236,20 @@ body {
 
 
 #example6 {
- 
+
   padding: 10px;
   box-shadow: 5px 5px springgreen, 10px 10px slateblue, 15px 15px turquoise ;
-   background-color: skyblue    ; 
+   background-color: skyblue    ;
    width:400px;
    margin-left:300px;
    box-sizing:border-box;
 }
 
 #example7 {
- 
+
   padding: 10px;
   box-shadow: 5px 5px yellow, 10px 10px crimson, 15px 15px pink ;
-   background-color: plum    ; 
+   background-color: plum    ;
    width:400px;
    margin-left:300px;
    box-sizing:border-box;
@@ -153,10 +257,10 @@ body {
 
 
 #example8 {
- 
+
   padding: 10px;
   box-shadow: 5px 5px darkslateblue, 10px 10px darkorchid , 15px 15px  plum ;
-   background-color: orchid    ; 
+   background-color: orchid    ;
    width:400px;
    margin-left:300px;
    box-sizing:border-box;
@@ -164,19 +268,58 @@ body {
 
 
 #example9 {
- 
+
   padding: 10px;
   box-shadow: 5px 5px forestgreen, 10px 10px palegreen , 15px 15px  seagreen ;
-   background-color: limegreen    ; 
+   background-color: limegreen    ;
    width:400px;
    margin-left:300px;
    box-sizing:border-box;
 }
 
-input[type="image"]
+
+
+
+/* 3 added pages below */
+
+/*
+#example10 {
+
+  padding: 10px;
+  box-shadow: 5px 5px forestgreen, 10px 10px palegreen , 15px 15px  seagreen ;
+   background-color: limegreen    ;
+   width:400px;
+   margin-left:300px;
+   box-sizing:border-box;
+}
+
+
+#example11 {
+
+  padding: 10px;
+  box-shadow: 5px 5px forestgreen, 10px 10px palegreen , 15px 15px  seagreen ;
+   background-color: limegreen    ;
+   width:400px;
+   margin-left:300px;
+   box-sizing:border-box;
+}
+
+
+#example12 {
+
+  padding: 10px;
+  box-shadow: 5px 5px forestgreen, 10px 10px palegreen , 15px 15px  seagreen ;
+   background-color: limegreen    ;
+   width:400px;
+   margin-left:300px;
+   box-sizing:border-box;
+}*/
+
+
+/*input[type="image"]
 {
  float:left;
- height:20px; 
+ height:20px;
  margin-left:2px;
  margin-right:5px;
  margin-top:2px;
@@ -185,12 +328,5 @@ input[type="image"]
 {
  margin-left:150px;
  width:20px;
-}
-
-
-
-
-
-
-
+}*/
 
