@@ -133,7 +133,7 @@ blink{animation: blink .1s infinite;}
  /*yes*/
 body {
 		 color: #ffffff; 
- height: 3000px; /* scrolling */
+ height: 5000px; /* scrolling */
   background: linear-gradient(555deg, #FFFF00 	 0%, #B22222 51%, #000000  85%);
 
 /*Reapeated circle background */
