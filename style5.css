@@ -10,10 +10,10 @@ padding: 5%
 h1 {
    text-shadow: 6px 5px pink;
 }
-
+ 
 .wrap {
   margin: 0px auto;
-/*  width: 486px;*/
+/*  width: 100%*/;
 } 
 .box {
   width: 360px;
