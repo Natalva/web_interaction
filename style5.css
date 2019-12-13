@@ -10,6 +10,7 @@ padding: 5%
 */}
 h1 {
    text-shadow: 6px 5px pink;
+     width: 100%;
 }
  
 .wrap {
@@ -30,6 +31,7 @@ h1 {
   font-size: 3em;
   font-family: sans-serif;
   text-transform: uppercase;
+    width: 100%;
 }
 
 .animated {
