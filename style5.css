@@ -12,6 +12,12 @@ h1 {
    text-shadow: 6px 5px pink;
      width: 100%;
 }
+
+@media only screen and (min-width: 961px) {
+  .page {
+    width: 960px;
+    margin: 0 auto;
+  } 
  
 .wrap {
   margin: 0px auto;
